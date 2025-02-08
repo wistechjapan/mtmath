@@ -1,54 +1,88 @@
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f8f8;
-  　font-family: 'Arial', sans-serif;
-  　background-color: #f4f4f4;
-  　color: #333;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1 {
-  color: #333;
-  text-align: center;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #45a049;
-}
+/* Header styles */
 header {
     background-color: #4a4a8b;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    font-size: 1.5rem;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Heading 1 (h1) styles */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.button {
     display: inline-block;
-    width: 80%;
-    max-width: 600px;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    margin-top: 15px;
 }
 
+/* Button hover effect */
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Section styles */
+section {
+    margin: 20px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Footer styles */
 footer {
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 40px;
+    padding: 15px 0;
     background-color: #4a4a8b;
     color: white;
+    font-size: 0.9rem;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
