@@ -27,22 +27,31 @@
         <div class="container">
             <h2>ミンコフスキーの定理</h2>
             <p>
-                 格子 \( \Lambda \subseteq \mathbb{R}^n \) と凸集合 \( S \subseteq \mathbb{R}^n \) に対して、\( S \) の体積が \( \text{Vol}(S) > 2^n \det(\Lambda) \) ならば、\( S \) は少なくとも一つ非自明な格子点を含む。
+                 対称な凸集合 \( S \subseteq \mathbb{R}^n \) が、体積 \( \text{Vol}(S) > 2^n \) を持つ場合、\( S \) は少なくとも一つ非自明な格子点を含む。
 
             </p>
             
             <h3>証明</h3>
             <p>
-                証明は以下のように進む。
-            </p>
-            <p>
-                基本並列体の体積 = \( \det(\Lambda) \)
-            </p>
-            <p>
-                もし  \( \operatorname{vol}(S) > 2^n \det(\Lambda) \) ならば、\( S \) 内に原点以外の格子点が存在する。
-            </p>
-            <p>
-                この結果は、格子点を考慮した体積比較を用いることで証明される。
+                格子 \( \Lambda \subseteq \mathbb{R}^n \) の基本領域を \( F \) とする。基本領域 \( F \) は、\( \mathbb{R}^n \) を格子 \( \Lambda \) で平行移動したときに重なりなく敷き詰められる領域であり、その体積は \( \text{Vol}(F) = \det(\Lambda) \) である。集合 \( S \) を格子点 \( \mathbf{v} \in \Lambda \) で平行移動した集合を \( S + \mathbf{v} \) とする。ここで、\( S \) をすべての格子点で平行移動した集合の和集合を考えると、この和集合は \( \mathbb{R}^n \) 全体を覆う。
+
+集合 \( S \) の体積が \( \text{Vol}(S) > 2^n \det(\Lambda) \) であるとする。ここで、\( S \) を \( \frac{1}{2} \) 倍に縮小した集合 \( \frac{1}{2}S \) を考える。この集合の体積は \( \text{Vol}\left(\frac{1}{2}S\right) = \frac{1}{2^n} \text{Vol}(S) > \det(\Lambda) \) となる。次に、\( \frac{1}{2}S \) をすべての格子点で平行移動した集合の和集合を考える。この和集合は \( \mathbb{R}^n \) 全体を覆うため、体積は無限大である。しかし、基本領域 \( F \) の体積は有限である。したがって、鳩の巣原理により、ある二つの異なる格子点 \( \mathbf{v}_1, \mathbf{v}_2 \in \Lambda \) が存在して、\( (\frac{1}{2}S + \mathbf{v}_1) \) と \( (\frac{1}{2}S + \mathbf{v}_2) \) が重なる。
+
+\( (\frac{1}{2}S + \mathbf{v}_1) \) と \( (\frac{1}{2}S + \mathbf{v}_2) \) が重なるため、ある点 \( \mathbf{x} \in \mathbb{R}^n \) が存在して、\( \mathbf{x} \in \frac{1}{2}S + \mathbf{v}_1 \) かつ \( \mathbf{x} \in \frac{1}{2}S + \mathbf{v}_2 \) となる。これより、次の関係が成り立つ：
+\[
+\mathbf{x} = \frac{1}{2}\mathbf{s}_1 + \mathbf{v}_1 = \frac{1}{2}\mathbf{s}_2 + \mathbf{v}_2
+\]
+ここで、\( \mathbf{s}_1, \mathbf{s}_2 \in S \) である。この式を整理すると：
+\[
+\mathbf{v}_1 - \mathbf{v}_2 = \frac{1}{2}(\mathbf{s}_2 - \mathbf{s}_1)
+\]
+となる。ここで、\( S \) は対称な凸集合であるため、\( \mathbf{s}_2 - \mathbf{s}_1 \in 2S \) である。したがって：
+\[
+\mathbf{v}_1 - \mathbf{v}_2 \in S
+\]
+となる。\( \mathbf{v}_1 - \mathbf{v}_2 \) は非自明な格子点であり、\( S \) に含まれる。
+
+以上より、\( \text{Vol}(S) > 2^n \det(\Lambda) \) の場合、\( S \) は少なくとも一つ非自明な格子点を含むことが示された。
             </p>
 
         </div>
