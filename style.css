@@ -1,95 +1,73 @@
-/* 基本スタイル */
+/* 全体のスタイル */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 }
 
 /* ヘッダー */
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    color: white;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    margin: 0;
-    padding-bottom: 10px;
-}
-
-/* 記事一覧 */
-section {
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
-    background: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 記事リスト */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    border-bottom: 2px solid #e8491d;
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
     padding-bottom: 5px;
-    color: #35424a;
+    margin-bottom: 15px;
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-ul li {
+li {
+    background: #ecf0f1;
+    margin: 10px 0;
     padding: 10px;
-    border-bottom: #ddd solid 1px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-ul li a {
+li:hover {
+    background: #d0e6e7;
+}
+
+li a {
     text-decoration: none;
-    color: #e8491d;
+    color: #2c3e50;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-ul li a:hover {
-    color: #35424a;
 }
 
 /* フッター */
 footer {
-    background: #35424a;
-    color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px;
+    background: #2c3e50;
+    color: white;
     margin-top: 20px;
 }
 
-.footer-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-top: 10px;
-}
-
-.footer-buttons a {
-    background: #e8491d;
-    color: #ffffff;
-    padding: 8px 15px;
-    text-decoration: none;
-    font-size: 14px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.footer-buttons a:hover {
-    background: #c0392b;
-}
