@@ -1,95 +1,146 @@
 /* 全体のスタイル */
 body {
     font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
 }
 
-/* ヘッダー */
-header {
-    background: linear-gradient(to right, #2c3e50, #34495e);
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .container {
     width: 90%;
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 20px;
 }
 
-/* ナビゲーションメニュー */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #34495e;
-    padding: 10px;
-}
-
-nav a {
+/* ヘッダー */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-weight: bold;
-    transition: background 0.3s;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid #4a00e0;
 }
 
-nav a:hover {
-    background-color: #1abc9c;
-    border-radius: 5px;
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* メニュー */
+nav {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #6a11cb;
 }
 
 /* 記事リスト */
 section {
     background: white;
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #1abc9c;
-    padding-bottom: 5px;
+section h2 {
+    text-align: center;
+    color: #333;
     margin-bottom: 15px;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
-li {
-    background: #ecf0f1;
-    margin: 10px 0;
+ul li {
     padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
+    border-bottom: 1px solid #ddd;
 }
 
-li:hover {
-    background: #d0e6e7;
+ul li:last-child {
+    border-bottom: none;
 }
 
-li a {
+ul li a {
     text-decoration: none;
-    color: #2c3e50;
+    color: #2575fc;
     font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* ボタン */
+.button {
+    display: inline-block;
+    background: #2575fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #6a11cb;
 }
 
 /* フッター */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #2c3e50;
+    background: #333;
     color: white;
+    text-align: center;
+    padding: 10px 0;
     margin-top: 20px;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
