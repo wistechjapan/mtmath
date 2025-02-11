@@ -64,10 +64,30 @@ li a {
 
 /* フッター */
 footer {
+    background: #35424a;
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
-    background: #2c3e50;
-    color: white;
+    padding: 10px 0;
     margin-top: 20px;
 }
 
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.footer-buttons a {
+    background: #e8491d;
+    color: #ffffff;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.footer-buttons a:hover {
+    background: #c0392b;
+}
