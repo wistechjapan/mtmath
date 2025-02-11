@@ -1,67 +1,95 @@
-/* Global styles */
+/* 全体のスタイル */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
     color: #333;
 }
 
-/* Header styles */
+/* ヘッダー */
 header {
-    background-color: #4a4a8b;
+    background: linear-gradient(to right, #2c3e50, #34495e);
     color: white;
     padding: 20px 0;
-    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Heading 1 (h1) styles */
-h1 {
-    color: #ffff00;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-/* Section styles */
-section {
-    margin: 20px auto;
-    padding: 25px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.container {
     width: 90%;
-    max-width: 800px;
-    box-sizing: border-box;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Article list styles */
+/* ナビゲーションメニュー */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    border-radius: 5px;
+}
+
+/* 記事リスト */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
 
-ul li {
+li {
+    background: #ecf0f1;
     margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-ul li a {
+li:hover {
+    background: #d0e6e7;
+}
+
+li a {
     text-decoration: none;
-    color: #4a4a8b;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+    color: #2c3e50;
+    font-weight: bold;
 }
 
-ul li a:hover {
-    color: #ff9900;
-}
-
-/* Footer styles */
+/* フッター */
 footer {
-    margin-top: 40px;
-    padding: 15px 0;
-    background-color: #4a4a8b;
+    text-align: center;
+    padding: 20px;
+    background: #2c3e50;
     color: white;
-    font-size: 0.9rem;
+    margin-top: 20px;
 }
+
