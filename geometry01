@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wistech 数学ライブラリ - ピタゴラスの定理の証明">
+    <meta name="keywords" content="ピタゴラスの定理, 数学, 定理, 証明, 三平方の定理">
+    <meta name="author" content="Wistech Japan">
+    <title>ピタゴラスの定理 - Wistech 数学ライブラリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wistech 数学ライブラリ</h1>
+            <p>ピタゴラスの定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>ピタゴラスの定理</h2>
+            <p>
+                直角三角形において、直角を挟む2辺の長さをそれぞれ \( a \)、\( b \)、斜辺の長さを \( c \) とすると、次の関係式が成り立つ：
+                \[
+                a^2 + b^2 = c^2
+                \]
+            </p>
+            
+            <h3>証明</h3>
+            <p><strong>方法 1: 平方の再配置による証明</strong></p>
+            <p>
+                1. 辺の長さが \( a \)、\( b \)、\( c \) の直角三角形を4つ用意し、\( (a+b) \times (a+b) \) の正方形を作る。
+                2. これら4つの三角形を並べると、中央に \( c \times c \) の正方形ができる。
+                3. 別の方法で並べ替えると、内部に \( a^2 \) と \( b^2 \) の正方形ができる。
+                4. これにより、\( a^2 + b^2 = c^2 \) が成り立つ。
+            </p>
+            
+            <p><strong>方法 2: 相似な三角形による証明</strong></p>
+            <p>
+                1. 直角三角形を斜辺を共有する2つの小さな直角三角形に分割する。
+                2. これらの三角形は元の三角形と相似であり、辺の比から \( a^2 + b^2 = c^2 \) が導かれる。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 Wistech Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
