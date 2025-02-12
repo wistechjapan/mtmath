@@ -6,22 +6,42 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://wistechjapan.github.io/wistech-portfolio/theorem0.html</loc>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/lattice01.html</loc>
         <lastmod>2025-02-10</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wistechjapan.github.io/wistech-portfolio/theorem1.html</loc>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/lattice02.html</loc>
         <lastmod>2025-02-10</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wistechjapan.github.io/wistech-portfolio/theorem2.html</loc>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/geometry01.html</loc>
         <lastmod>2025-02-10</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wistechjapan.github.io/wistech-portfolio/theorem3.html</loc>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/geometry02.html</loc>
+        <lastmod>2025-02-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/geometry03.html</loc>
+        <lastmod>2025-02-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/about.html</loc>
+        <lastmod>2025-02-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/contact.html</loc>
+        <lastmod>2025-02-10</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://wistechjapan.github.io/wistech-portfolio/privacy.html</loc>
         <lastmod>2025-02-10</lastmod>
         <priority>0.8</priority>
     </url>
