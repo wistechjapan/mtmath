@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wistech 数学ライブラリ - お問い合わせ">
+    <meta name="keywords" content="お問い合わせ, Wistech">
+    <meta name="author" content="Wistech Japan">
+    <title>お問い合わせ - Wistech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>お問い合わせ</h1>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section>
+        <div class="container">
+            <p>ご質問やお問い合わせは以下のフォームから送信してください。</p>
+            <form action="https://formspree.io/f/{YOUR_FORM_ID}" method="POST">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">お問い合わせ内容:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 Wistech Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
