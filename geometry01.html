@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wistech 数学ライブラリ - 中点連結定理の証明">
+    <meta name="keywords" content="中点連結定理, 幾何, 数学, 証明">
+    <meta name="author" content="Wistech Japan">
+    <title>中点連結定理 - Wistech 数学ライブラリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wistech 数学ライブラリ</h1>
+            <p>幾何の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>中点連結定理</h2>
+            <p>
+                三角形の二辺の中点を結ぶ線分は、
+                <strong>第三辺に平行であり、その長さは第三辺の半分</strong>
+                になる。
+            </p>
+            
+            <h3>証明</h3>
+            <p><strong>1. 設定</strong></p>
+            <p>
+                三角形 \( \triangle ABC \) を考える。<br>
+                辺 \( AB \) の中点を \( M \)、辺 \( AC \) の中点を \( N \) とする。<br>
+                証明すべきことは：
+                <ul>
+                    <li>線分 \( MN \) は辺 \( BC \) に平行</li>
+                    <li>線分 \( MN \) の長さは \( BC \) の半分</li>
+                </ul>
+            </p>
+            
+            <p><strong>2. ベクトルを用いた証明</strong></p>
+            <p>
+                各点の位置ベクトルを次のように表す：
+                
+                \[
+                \vec{M} = \frac{\vec{A} + \vec{B}}{2}, \quad
+                \vec{N} = \frac{\vec{A} + \vec{C}}{2}
+                \]
+                
+                \( MN \) のベクトルは：
+                
+                \[
+                \vec{MN} = \vec{N} - \vec{M} = \frac{\vec{A} + \vec{C}}{2} - \frac{\vec{A} + \vec{B}}{2}
+                \]
+                
+                \[
+                = \frac{\vec{C} - \vec{B}}{2}
+                \]
+                
+                これは \( BC \) のベクトル \( \vec{BC} = \vec{C} - \vec{B} \) の半分であり、同じ向きを持つ。
+                よって、
+                
+                \[
+                MN \parallel BC, \quad MN = \frac{1}{2} BC
+                \]
+            </p>
+            
+            <p><strong>3. 結論</strong></p>
+            <p>
+                以上より、\( MN \) は \( BC \) に平行であり、長さは \( BC \) の半分であることが示された。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 Wistech Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
