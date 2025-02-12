@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wistech 数学ライブラリ - チェバの定理">
+    <meta name="keywords" content="チェバの定理, 数学, 幾何, 証明, Ceva's theorem">
+    <meta name="author" content="Wistech Japan">
+    <title>チェバの定理 - Wistech 数学ライブラリ</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async 
+        src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async 
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wistech 数学ライブラリ</h1>
+            <p>幾何の定理とその証明</p>
+        </div>
+    </header>
+
+    <!-- Article Section -->
+    <section>
+        <div class="container">
+            <h2>チェバの定理</h2>
+            <p>
+                三角形 \(ABC\) において、点 \(D, E, F\) がそれぞれ辺 \(BC, CA, AB\) 上にあるとする。
+                直線 \(AD, BE, CF\) が一点で交わるための必要十分条件は、次の関係式が成り立つことである：
+                \[
+                \frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1
+                \]
+            </p>
+            
+            <h3>証明</h3>
+            <p><strong>1. 三角形の面積比を考える</strong></p>
+            <p>
+                三角形の面積は、共通の高さを持つ場合、底辺の比に比例する。
+                したがって、三角形の面積比を用いて、チェバの定理の条件を導出する。
+            </p>
+
+            <p><strong>2. 面積の比を変形する</strong></p>
+            <p>
+                三角形 \( 	riangle ABE \) と \( 	riangle CBE \) の面積比を考えると、
+                \[
+                \frac{S_{ABE}}{S_{CBE}} = \frac{AF}{FB}
+                \]
+                同様に、
+                \[
+                \frac{S_{BCF}}{S_{ACF}} = \frac{BD}{DC}, \quad \frac{S_{CAD}}{S_{BAD}} = \frac{CE}{EA}
+                \]
+                これらの関係を掛け合わせると、
+                \[
+                \frac{BD}{DC} \cdot \frac{CE}{EA} \cdot \frac{AF}{FB} = 1
+                \]
+                となるため、チェバの定理が成り立つ。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+            </ul>
+            <p>&copy; 2025 Wistech Japan. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
