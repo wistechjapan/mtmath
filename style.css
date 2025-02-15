@@ -11,16 +11,40 @@ body {
 header {
     background: linear-gradient(to right, #2c3e50, #34495e);
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex; /* フレックスボックスを使用して画像とテキストを配置 */
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: center; /* 水平方向に中央揃え */
 }
 
+/* 左端に挿入する画像 */
+header.mountain-header .header-image {
+    position: absolute;
+    left: 20px; /* 左端からの距離 */
+    height: 80px; /* 画像の高さ */
+    width: auto; /* 幅は自動調整 */
+}
+
+/* グラデーションオーバーレイ */
+header.mountain-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+/* コンテナ */
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
 }
 
 /* 記事リスト */
