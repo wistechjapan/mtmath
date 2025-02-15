@@ -45,7 +45,7 @@ header.mountain-header .header-text p {
 }
 
 /* コンテナ */
-.container {
+section.container {
     width: 90%;
     max-width: 1000px;
     margin: auto;
