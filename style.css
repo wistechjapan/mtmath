@@ -1,33 +1,40 @@
- /* 全体のスタイル */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-}
-
 /* ヘッダー */
 header.mountain-header {
-    background: #2c3e50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
     display: flex; /* フレックスボックスを使用して画像とテキストを配置 */
     align-items: center; /* 垂直方向に中央揃え */
-    justify-content: center; /* 水平方向に中央揃え */
+    justify-content: space-between; /* 左右に配置 */
 }
 
 /* 左端に挿入する画像 */
 header.mountain-header .header-image {
-    position: absolute;
-    left: 5px; /* 左端からの距離 */
-    height: 10px; /* 画像の高さ */
-    width: 50px;
+    height: 40px; /* 画像の高さ */
+    width: auto;  /* 横幅は自動調整 */
 }
 
+/* テキスト部分 */
+header.mountain-header .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px; /* 画像との間隔 */
+}
+
+header.mountain-header .header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header.mountain-header .header-text p {
+    margin: 0;
+    font-size: 16px;
+}
 
 /* コンテナ */
 .container {
@@ -36,6 +43,16 @@ header.mountain-header .header-image {
     margin: auto;
     padding: 20px;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* 記事リスト */
 section {
