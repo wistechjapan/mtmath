@@ -87,13 +87,13 @@ li:hover {
 }
 
 li a {
-    text-decoration: none;
-    color: #2c3e50;
-    font-weight: bold;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
 }
 
 li a:hover {
-    color: #1abc9c; /* リンクにホバー時の色を追加 */
+    color: #1abc9c;
 }
 
 /* フッター */
