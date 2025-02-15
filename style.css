@@ -92,6 +92,10 @@ li a {
     font-weight: bold;
 }
 
+li a:hover {
+    color: #1abc9c; /* リンクにホバー時の色を追加 */
+}
+
 /* フッター */
 footer {
     text-align: center;
