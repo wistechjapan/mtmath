@@ -23,8 +23,8 @@ header {
 /* 左端に挿入する画像 */
 header.mountain-header .header-image {
     position: absolute;
-    left: 20px; /* 左端からの距離 */
-    height: 80px; /* 画像の高さ */
+    left: 5px; /* 左端からの距離 */
+    height: 10px; /* 画像の高さ */
     width: auto; /* 幅は自動調整 */
 }
 
