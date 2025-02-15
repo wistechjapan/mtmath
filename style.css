@@ -32,7 +32,7 @@ header.mountain-header .header-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 40px;
     align-items: flex-start;
 }
 
